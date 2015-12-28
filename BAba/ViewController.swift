@@ -8,11 +8,30 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, NSSpeechSynthesizerDelegate {
+
+    let speechSynth = NSSpeechSynthesizer()
+    var syllableGenerator = Syllable()
+    var syllable = ""
+
+    @IBOutlet weak var syllableLabel: NSTextField!
+    @IBAction func getSyllable(sender: AnyObject) {
+        syllable = syllableGenerator.createSyllable(false)
+        syllableLabel.stringValue = syllable
+    }
+    @IBAction func getRandomSyllable(sender: AnyObject) {
+        syllable = syllableGenerator.createSyllable(true)
+        syllableLabel.stringValue = syllable
+    }
+    @IBAction func getAnswer(sender: AnyObject) {
+        speechSynth.startSpeakingString(syllable)
+//        syllable
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        speechSynth.setVoice(NSSpeechSynthesizer.defaultVoice())
+        syllableLabel.stringValue = syllable
         // Do any additional setup after loading the view.
     }
 
