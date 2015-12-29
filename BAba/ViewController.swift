@@ -24,15 +24,13 @@ class ViewController: NSViewController, NSSpeechSynthesizerDelegate {
         syllableLabel.stringValue = syllable
     }
     @IBAction func getAnswer(sender: AnyObject) {
-        speechSynth.startSpeakingString(syllable)
-//        syllable
+        syllableGenerator.speek(speechSynth)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         speechSynth.setVoice(NSSpeechSynthesizer.defaultVoice())
         syllableLabel.stringValue = syllable
-        // Do any additional setup after loading the view.
     }
 
     override var representedObject: AnyObject? {
