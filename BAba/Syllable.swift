@@ -17,6 +17,8 @@ class Syllable {
         "ba": "bha", "be": "bheu", "by": "bi", "ca": "qua", "fe": "feux",
         "ge": "je", "he": "eux", "my": "mi"]
 
+    let unexistingSillables = ["by", "qa", "qe", "qi", "qo", "qy"]
+
     var actualConsonant = 0
     var actualVowel = 0
 
@@ -28,8 +30,11 @@ class Syllable {
     }
 
     func simpleSyllable() -> String {
-        nextSyllable()
-        let syllable = String(consonants[actualConsonant])+String(vowels[actualVowel])
+        var syllable = ""
+        repeat {
+            nextSyllable()
+            syllable = String(consonants[actualConsonant])+String(vowels[actualVowel])
+        } while unexistingSillables.contains(syllable) || syllable == ""
         return syllable
     }
 
@@ -54,14 +59,15 @@ class Syllable {
                 actualConsonant = 0
             }
         }
-
     }
 
     func randomSyllabe() -> String {
-        actualVowel = Int(arc4random_uniform(UInt32(vowels.count)))
-        actualConsonant = Int(arc4random_uniform(UInt32(consonants.count)))
-        let syllable = String(consonants[actualConsonant])+String(vowels[actualVowel])
-//        nextSyllable()
+        var syllable = ""
+        repeat {
+            actualVowel = Int(arc4random_uniform(UInt32(vowels.count)))
+            actualConsonant = Int(arc4random_uniform(UInt32(consonants.count)))
+            syllable = String(consonants[actualConsonant])+String(vowels[actualVowel])
+        } while unexistingSillables.contains(syllable) || syllable == ""
         return syllable
     }
 }
