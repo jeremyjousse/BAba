@@ -41,7 +41,6 @@ class Syllable {
     func speek(speechSynth: NSSpeechSynthesizer) {
         let syllable = String(consonants[actualConsonant])+String(vowels[actualVowel])
         if let newSyllable = specialSpeechedSyllables[syllable] {
-            print("remplace syllable by \(newSyllable)")
             speechSynth.startSpeakingString(newSyllable)
         } else {
             speechSynth.startSpeakingString(syllable)
