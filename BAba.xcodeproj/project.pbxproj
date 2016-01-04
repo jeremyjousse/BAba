@@ -13,6 +13,7 @@
 		C489D88A1C3141FB003F07FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C489D8881C3141FB003F07FA /* Main.storyboard */; };
 		C49FB7DB1C319282009754C8 /* simpleWords.json in Resources */ = {isa = PBXBuildFile; fileRef = C49FB7DA1C319282009754C8 /* simpleWords.json */; };
 		C4B617931C31685B00C454E4 /* Syllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B617921C31685B00C454E4 /* Syllable.swift */; };
+		C4CE6ECC1C34393600DB6C3A /* SimpleWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CE6ECB1C34393600DB6C3A /* SimpleWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C489D88B1C3141FB003F07FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49FB7DA1C319282009754C8 /* simpleWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = simpleWords.json; sourceTree = "<group>"; };
 		C4B617921C31685B00C454E4 /* Syllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Syllable.swift; sourceTree = "<group>"; };
+		C4CE6ECB1C34393600DB6C3A /* SimpleWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				C489D8881C3141FB003F07FA /* Main.storyboard */,
 				C489D88B1C3141FB003F07FA /* Info.plist */,
 				C4B617921C31685B00C454E4 /* Syllable.swift */,
+				C4CE6ECB1C34393600DB6C3A /* SimpleWord.swift */,
 			);
 			path = BAba;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C489D8851C3141FB003F07FA /* ViewController.swift in Sources */,
+				C4CE6ECC1C34393600DB6C3A /* SimpleWord.swift in Sources */,
 				C489D8831C3141FB003F07FA /* AppDelegate.swift in Sources */,
 				C4B617931C31685B00C454E4 /* Syllable.swift in Sources */,
 			);

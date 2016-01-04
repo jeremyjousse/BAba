@@ -10,12 +10,12 @@ import Foundation
 import Cocoa
 
 class Syllable {
-    let consonants = Array("bcdfghjklmnpqrst".characters)
+    let consonants = Array("bcdfghjklmnpqrstvwxz".characters)
     let vowels = Array("aeiouy".characters)
 
     let specialSpeechedSyllables = [
         "ba": "bha", "be": "bheu", "by": "bi", "ca": "qua", "fe": "feux",
-        "ge": "je", "he": "eux", "my": "mi"]
+        "ge": "je", "he": "eux", "ke": "que", "my": "mi"]
 
     let unexistingSillables = ["by", "qa", "qe", "qi", "qo", "qy"]
 

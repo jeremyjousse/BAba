@@ -31,6 +31,9 @@ class ViewController: NSViewController, NSSpeechSynthesizerDelegate {
         super.viewDidLoad()
         speechSynth.setVoice(NSSpeechSynthesizer.defaultVoice())
         syllableLabel.stringValue = syllable
+//
+//        let simpleWord = SimpleWord()
+//        print(simpleWord.words.count)
     }
 
     override var representedObject: AnyObject? {
