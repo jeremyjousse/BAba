@@ -16,10 +16,7 @@ class SyllableViewController: NSViewController, NSSpeechSynthesizerDelegate {
     @IBOutlet weak var syllableLabel: NSTextField!
 
     @IBAction func backToMenu(sender: NSButton) {
-        let storyboard = NSStoryboard(name: "Main", bundle: nil)
-        let sourceViewController = storyboard
-            .instantiateControllerWithIdentifier("MenuViewController") as? NSViewController
-        view.window?.contentViewController = sourceViewController
+        self.dismissViewController(self)
     }
 
     @IBAction func getSyllable(sender: AnyObject) {

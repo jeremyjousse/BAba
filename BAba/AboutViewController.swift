@@ -9,13 +9,12 @@
 import Cocoa
 
 class AboutViewController: NSViewController {
-    @IBAction func backToMenu(sender: NSButton) {
-        let storyboard = NSStoryboard(name: "Main", bundle: nil)
-        let sourceViewController = storyboard
-            .instantiateControllerWithIdentifier("MenuViewController") as? NSViewController
-        view.window?.contentViewController = sourceViewController
+    @IBAction func dismiss(sender: NSButton) {
+//        self.dismiss(sender)
+        self.dismissViewController(self)
     }
-    
+
+
     override var representedObject: AnyObject? {
         didSet {
             // Update the view, if already loaded.

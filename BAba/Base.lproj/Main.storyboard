@@ -681,6 +681,7 @@
                                 </buttonCell>
                                 <connections>
                                     <action selector="goToSyllable:" target="XfG-lQ-9wD" id="yHE-Dk-34q"/>
+                                    <segue destination="48g-z1-5bA" kind="sheet" id="1qO-Nh-KTp"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AV9-Bl-Eva">
@@ -689,6 +690,16 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nqW-c8-QKJ">
+                                <rect key="frame" x="387" y="13" width="77" height="32"/>
+                                <buttonCell key="cell" type="push" title="About" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zHe-bx-n4f">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="tYd-13-Chb" kind="sheet" id="duT-zd-XVs"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
@@ -777,6 +788,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="dismiss:" target="tYd-13-Chb" id="2yt-Ar-ps8"/>
+                                </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AoO-tH-2aJ">
                                 <rect key="frame" x="207" y="220" width="41" height="17"/>
@@ -791,7 +805,7 @@
                 </viewController>
                 <customObject id="azj-We-BWy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="686.5" y="1111"/>
+            <point key="canvasLocation" x="400.5" y="1175"/>
         </scene>
     </scenes>
 </document>
