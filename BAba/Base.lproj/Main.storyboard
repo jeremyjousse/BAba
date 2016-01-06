@@ -763,5 +763,35 @@
             </objects>
             <point key="canvasLocation" x="686.5" y="732"/>
         </scene>
+        <!--About View Controller-->
+        <scene sceneID="aW1-cb-CkI">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" id="tYd-13-Chb" customClass="AboutViewController" customModule="BAba" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="VQq-QK-esa">
+                        <rect key="frame" x="0.0" y="0.0" width="481" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32P-nX-N35">
+                                <rect key="frame" x="14" y="252" width="81" height="32"/>
+                                <buttonCell key="cell" type="push" title="Retour" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5Xb-hZ-j0d">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AoO-tH-2aJ">
+                                <rect key="frame" x="207" y="220" width="41" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="About" id="1wd-Gl-m9v">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="azj-We-BWy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686.5" y="1111"/>
+        </scene>
     </scenes>
 </document>
