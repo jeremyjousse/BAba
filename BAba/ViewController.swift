@@ -26,5 +26,9 @@ class ViewController: NSViewController {
         }
     }
 
+    override func prepareForSegue(segue: NSStoryboardSegue, sender: AnyObject?) {
+        print(segue.identifier)
+    }
+
 
 }

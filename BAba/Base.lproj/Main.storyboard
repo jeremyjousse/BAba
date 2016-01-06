@@ -681,7 +681,7 @@
                                 </buttonCell>
                                 <connections>
                                     <action selector="goToSyllable:" target="XfG-lQ-9wD" id="yHE-Dk-34q"/>
-                                    <segue destination="48g-z1-5bA" kind="sheet" id="1qO-Nh-KTp"/>
+                                    <segue destination="48g-z1-5bA" kind="sheet" identifier="showExercice" id="1qO-Nh-KTp"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AV9-Bl-Eva">
@@ -698,7 +698,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="tYd-13-Chb" kind="sheet" id="duT-zd-XVs"/>
+                                    <segue destination="tYd-13-Chb" kind="sheet" identifier="showAbout" id="duT-zd-XVs"/>
                                 </connections>
                             </button>
                         </subviews>
