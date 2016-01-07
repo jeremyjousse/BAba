@@ -10,6 +10,10 @@ import Cocoa
 
 class NumberViewController: NSViewController {
 
+    @IBAction func backToMenu(sender: NSButton) {
+        self.dismissViewController(self)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
