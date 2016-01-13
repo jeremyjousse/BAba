@@ -10,6 +10,7 @@ import Cocoa
 
 class NumberViewController: NSViewController {
 
+    let userDefaults = UserDefaults()
     var numberGenerator = NumberGenerator()
 
     var privateMaxNumber: Int
@@ -49,6 +50,7 @@ class NumberViewController: NSViewController {
     @IBOutlet var actualNumberLabel: NSTextField!
 
     @IBAction func backToMenu(sender: NSButton) {
+        userDefaults.activeView = ""
         self.dismissViewController(self)
     }
 

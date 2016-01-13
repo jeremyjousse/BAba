@@ -9,13 +9,16 @@
 import Cocoa
 
 class SyllableViewController: NSViewController, NSSpeechSynthesizerDelegate {
+    let userDefaults = UserDefaults()
     let speechSynth = NSSpeechSynthesizer()
     var syllableGenerator = Syllable()
     var syllable = ""
 
+
     @IBOutlet weak var syllableLabel: NSTextField!
 
     @IBAction func backToMenu(sender: NSButton) {
+        userDefaults.activeView = ""
         self.dismissViewController(self)
     }
 

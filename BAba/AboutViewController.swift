@@ -9,15 +9,17 @@
 import Cocoa
 
 class AboutViewController: NSViewController {
+
+    let userDefaults = UserDefaults()
+
     @IBAction func dismiss(sender: NSButton) {
-//        self.dismiss(sender)
+        userDefaults.activeView = ""
         self.dismissViewController(self)
     }
 
 
     override var representedObject: AnyObject? {
         didSet {
-            // Update the view, if already loaded.
         }
     }
 }
