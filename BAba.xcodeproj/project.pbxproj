@@ -7,16 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40D10881C3FA21A00A7B52F /* NumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D10871C3FA21A00A7B52F /* NumberGenerator.swift */; };
+		C42293021C451D4B002DE0C8 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42293011C451D4B002DE0C8 /* UserDefaults.swift */; };
+		C47E75271C3CF254004333C6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47E75261C3CF254004333C6 /* AboutViewController.swift */; };
 		C489D8831C3141FB003F07FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C489D8821C3141FB003F07FA /* AppDelegate.swift */; };
 		C489D8851C3141FB003F07FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C489D8841C3141FB003F07FA /* ViewController.swift */; };
 		C489D8871C3141FB003F07FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C489D8861C3141FB003F07FA /* Assets.xcassets */; };
 		C489D88A1C3141FB003F07FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C489D8881C3141FB003F07FA /* Main.storyboard */; };
 		C49FB7DB1C319282009754C8 /* simpleWords.json in Resources */ = {isa = PBXBuildFile; fileRef = C49FB7DA1C319282009754C8 /* simpleWords.json */; };
+		C4B129C01C3AA051008F499C /* SyllableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B129BF1C3AA051008F499C /* SyllableViewController.swift */; };
 		C4B617931C31685B00C454E4 /* Syllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B617921C31685B00C454E4 /* Syllable.swift */; };
-		C4CE6ECC1C34393600DB6C3A /* SimpleWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CE6ECB1C34393600DB6C3A /* SimpleWord.swift */; };
+		C4EB86EA1C3EF36A000CAAB3 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EB86E91C3EF36A000CAAB3 /* NumberViewController.swift */; };
+		C4EB86EC1C3EF51E000CAAB3 /* FadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EB86EB1C3EF51E000CAAB3 /* FadeSegue.swift */; };
+		C4EB86EE1C3EFA26000CAAB3 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C4EB86ED1C3EFA26000CAAB3 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C40D10871C3FA21A00A7B52F /* NumberGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberGenerator.swift; sourceTree = "<group>"; };
+		C42293011C451D4B002DE0C8 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		C47E75261C3CF254004333C6 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		C489D87F1C3141FB003F07FA /* BAba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C489D8821C3141FB003F07FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C489D8841C3141FB003F07FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +33,11 @@
 		C489D8891C3141FB003F07FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C489D88B1C3141FB003F07FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49FB7DA1C319282009754C8 /* simpleWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = simpleWords.json; sourceTree = "<group>"; };
+		C4B129BF1C3AA051008F499C /* SyllableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyllableViewController.swift; sourceTree = "<group>"; };
 		C4B617921C31685B00C454E4 /* Syllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Syllable.swift; sourceTree = "<group>"; };
-		C4CE6ECB1C34393600DB6C3A /* SimpleWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleWord.swift; sourceTree = "<group>"; };
+		C4EB86E91C3EF36A000CAAB3 /* NumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
+		C4EB86EB1C3EF51E000CAAB3 /* FadeSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeSegue.swift; sourceTree = "<group>"; };
+		C4EB86ED1C3EFA26000CAAB3 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +54,7 @@
 		C489D8761C3141FB003F07FA = {
 			isa = PBXGroup;
 			children = (
+				C4EB86ED1C3EFA26000CAAB3 /* .swiftlint.yml */,
 				C489D8811C3141FB003F07FA /* BAba */,
 				C489D8801C3141FB003F07FA /* Products */,
 			);
@@ -65,7 +78,12 @@
 				C489D8881C3141FB003F07FA /* Main.storyboard */,
 				C489D88B1C3141FB003F07FA /* Info.plist */,
 				C4B617921C31685B00C454E4 /* Syllable.swift */,
-				C4CE6ECB1C34393600DB6C3A /* SimpleWord.swift */,
+				C4B129BF1C3AA051008F499C /* SyllableViewController.swift */,
+				C47E75261C3CF254004333C6 /* AboutViewController.swift */,
+				C4EB86E91C3EF36A000CAAB3 /* NumberViewController.swift */,
+				C4EB86EB1C3EF51E000CAAB3 /* FadeSegue.swift */,
+				C40D10871C3FA21A00A7B52F /* NumberGenerator.swift */,
+				C42293011C451D4B002DE0C8 /* UserDefaults.swift */,
 			);
 			path = BAba;
 			sourceTree = "<group>";
@@ -137,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EB86EE1C3EFA26000CAAB3 /* .swiftlint.yml in Resources */,
 				C489D8871C3141FB003F07FA /* Assets.xcassets in Resources */,
 				C49FB7DB1C319282009754C8 /* simpleWords.json in Resources */,
 				C489D88A1C3141FB003F07FA /* Main.storyboard in Resources */,
@@ -157,7 +176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -166,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EB86EC1C3EF51E000CAAB3 /* FadeSegue.swift in Sources */,
 				C489D8851C3141FB003F07FA /* ViewController.swift in Sources */,
-				C4CE6ECC1C34393600DB6C3A /* SimpleWord.swift in Sources */,
 				C489D8831C3141FB003F07FA /* AppDelegate.swift in Sources */,
+				C4B129C01C3AA051008F499C /* SyllableViewController.swift in Sources */,
+				C4EB86EA1C3EF36A000CAAB3 /* NumberViewController.swift in Sources */,
+				C42293021C451D4B002DE0C8 /* UserDefaults.swift in Sources */,
+				C40D10881C3FA21A00A7B52F /* NumberGenerator.swift in Sources */,
+				C47E75271C3CF254004333C6 /* AboutViewController.swift in Sources */,
 				C4B617931C31685B00C454E4 /* Syllable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
