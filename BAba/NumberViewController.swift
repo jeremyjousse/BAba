@@ -30,8 +30,18 @@ class NumberViewController: NSViewController {
 
     dynamic var minNumber: Int {
         set {
-            privateMinNumber = newValue
-            numberGenerator.minNumber = privateMinNumber
+            if newValue > privateMaxNumber {
+                let alert: NSAlert = NSAlert()
+                alert.messageText = "Erreur de saisie"
+                alert.informativeText = "Nombre min ne peut pas être suppérieur à Nombre max"
+                alert.alertStyle = NSAlertStyle.WarningAlertStyle
+                alert.addButtonWithTitle("OK")
+                alert.beginSheetModalForWindow(self.view.window!, completionHandler: nil )
+                minNumberLabel.stringValue = String(privateMaxNumber)
+            } else {
+                privateMinNumber = newValue
+                numberGenerator.minNumber = privateMinNumber
+            }
         }
 
         get {
