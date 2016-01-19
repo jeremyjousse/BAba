@@ -83,9 +83,50 @@ class NumberViewController: NSViewController {
         maxNumberLabel.stringValue = String(maxNumber)
         minNumberLabel.stringValue = String(minNumber)
         updateactualNumberLabel()
+
+        NSEvent.addLocalMonitorForEventsMatchingMask(.KeyDownMask) { (aEvent) -> NSEvent? in
+            self.keyDown(aEvent)
+            return aEvent
+        }
+
+        NSEvent.addLocalMonitorForEventsMatchingMask(.FlagsChangedMask) { (theEvent) -> NSEvent? in
+            self.flagsChanged(theEvent)
+            return theEvent
+        }
     }
 
     func updateactualNumberLabel() {
         actualNumberLabel.stringValue = String(numberGenerator.actualNumber)
+    }
+
+    // MARK: - First Responder
+    override var acceptsFirstResponder: Bool {
+        return true
+    }
+
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
+
+    override func resignFirstResponder() -> Bool {
+        return true
+    }
+
+
+    // MARK: - Key events
+    override func keyDown(theEvent: NSEvent) {
+        interpretKeyEvents([theEvent])
+    }
+
+    override func insertText(insertString: AnyObject) {
+        let text = insertString as! String
+        if text == "n" {
+            numberGenerator.next()
+            updateactualNumberLabel()
+        }
+        if text == "a" {
+            numberGenerator.random()
+            updateactualNumberLabel()
+        }
     }
 }
